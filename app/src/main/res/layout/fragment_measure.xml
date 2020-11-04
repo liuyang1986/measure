@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="20dp"
+        android:text="现场测量"
+        android:gravity="center"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_marginTop="5dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_base"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/img_database"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/database"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img_database"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="基础信息"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="查看水准点、工点、断面和测点信息"
+                android:textColor="#aaaaaa"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_measure_2nd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/img_measure_2nd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/mea"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img_measure_2nd"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="二等水准线路测量(aBFFB/aFBBF)"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="按照已经设置的水准线路进行测量"
+                android:textColor="#aaaaaa"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_marginTop="5dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_measure"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_measure"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/mea"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img_measure"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="四等水准线路测量(BBFF/FFBB)"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="按照已经设置的水准线路进行测量"
+                android:textColor="#aaaaaa"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_marginTop="5dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/safety"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img_setting"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="限值设定"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="可将测量中的限值设定的更小"
+                android:textColor="#aaaaaa"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

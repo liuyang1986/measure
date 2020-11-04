@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="109dp"
+        android:layout_height="109dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:src="@mipmap/logo"/>
+
+    <LinearLayout
+        android:layout_below="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edit_account"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textCursorDrawable="@drawable/shape_cursor_color"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="请输入账号"
+                android:maxLines="1"
+                android:textColor="#ff333333"
+                android:textColorHint="#ff999999"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/account_clear"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/clear"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+    <View
+       android:id="@+id/account_bottom_line"
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:background="@color/background_lose_focus"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@null"
+                android:ellipsize="end"
+                android:textCursorDrawable="@drawable/shape_cursor_color"
+                android:hint="请输入密码"
+                android:maxLines="1"
+                android:textColor="#ff333333"
+                android:textColorHint="#ff999999"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/password_clear"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/clear"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/password_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/background_lose_focus"/>
+
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_disable_corner_rect"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

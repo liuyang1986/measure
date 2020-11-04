@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_measure_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/measure_data_item_height"
+        android:layout_weight="1"
+        android:background="@drawable/shape_rec">
+        <Spinner
+            android:id="@+id/spin_measure_name_odd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overlapAnchor="false"
+            android:paddingRight="35dp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/measure_data_item_height"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_rec">
+        <TextView
+            android:id="@+id/txt_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16"/>
+        <TextView
+            android:id="@+id/txt_rb_hd1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16"/>
+        <TextView
+            android:id="@+id/txt_rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16552"/>
+        <TextView
+            android:id="@+id/txt_rb_hd4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16552"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/measure_data_item_height"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape_rec">
+        <TextView
+            android:id="@+id/txt_rf5"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16552"/>
+        <TextView
+            android:id="@+id/txt_rf_hd5"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16552"/>
+        <TextView
+            android:id="@+id/txt_rf8"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16552"/>
+        <TextView
+            android:id="@+id/txt_rf_hd8"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            tools:text="1.16552"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/measure_data_item_height"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_rec">
+        <TextView
+            android:id="@+id/txt1_rd1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:gravity="center"
+            tools:text="1.16552"/>
+        <TextView
+            android:id="@+id/txt1_rd2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:gravity="center"
+            tools:text="1.16552"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/measure_data_item_height"
+        android:layout_weight="0.5"
+        android:background="@drawable/shape_rec">
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="查看" />
+
+    </LinearLayout>
+
+</LinearLayout>

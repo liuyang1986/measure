@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="win.lioil.bluetooth">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--建立蓝牙连接和传输权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--扫描蓝牙设备或修改蓝牙设置权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--Android 6.0及后续版本扫描蓝牙,需要定位权限(进入GPS设置,可以看到蓝牙定位)-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- required = true 表示手机必须支持BLE，否则无法安装运行-->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <application
+        android:name=".APP"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+        </activity>
+
+        <activity android:name=".activity.HomeActivity">
+        </activity>
+
+        <activity android:name=".activity.FileWebViewActivity">
+        </activity>
+
+        <activity android:name=".activity.FilePreviewActivity">
+        </activity>
+
+        <activity android:name=".activity.DetailListActivity">
+        </activity>
+
+        <activity android:name=".activity.SubGradeActivity">
+        </activity>
+
+        <activity android:name=".activity.BaseInfoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".activity.MeasureActivity">
+        </activity>
+
+        <activity android:name=".activity.LevelingLinesListActivity">
+        </activity>
+
+        <activity android:name=".activity.BasicInfoActivity">
+        </activity>
+
+        <activity
+            android:name=".bt.BtClientActivity"
+            android:label="@string/bt_client"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".bt.BtServerActivity"
+            android:label="@string/bt_server"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ble.BleClientActivity"
+            android:label="@string/ble_client" />
+
+        <activity
+            android:name=".ble.BleServerActivity"
+            android:label="@string/ble_server" />
+
+    </application>
+
+</manifest>

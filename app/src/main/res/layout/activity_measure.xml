@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background_color">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_web_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="水准线路测量"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:id="@+id/measure_method"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:text="往 测"/>
+
+        <Button
+            android:id="@+id/connect_bluetooth"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/measure_method"
+            android:text="连接蓝牙"/>
+
+        <Button
+            android:id="@+id/btn_clear_all"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/connect_bluetooth"
+            android:text="清空"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:text="保存"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/device_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:text="设备序列号"/>
+
+        <Button
+            android:id="@+id/temperature"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:ellipsize="marquee"
+            android:layout_toRightOf="@+id/device_no"
+            android:text="温度"/>
+
+        <Button
+            android:id="@+id/pressure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_toRightOf="@+id/temperature"
+            android:text="气压"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/operater_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="司镜人员姓名"/>
+
+        <Button
+            android:id="@+id/operater_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="司镜人员身份证号"
+            android:textSize="15dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <Button
+            android:id="@+id/instrument_brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="仪器品牌"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:ellipsize="marquee"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/instrument_model"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="仪器型号"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txt_weather"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:text="天气:"
+            android:gravity="center_vertical" />
+        <Spinner
+            android:id="@+id/weather_spin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="备注:"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edt_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="测点"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="后视/视距"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="前视/视距"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="近似高程"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="校验"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/ll_measure_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/measure_result"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="测量结果"/>
+
+        <Button
+            android:id="@+id/measure_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="撤销重测"/>
+    </LinearLayout>
+</LinearLayout>

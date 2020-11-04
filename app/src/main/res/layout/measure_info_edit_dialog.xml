@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="完善测量信息"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="测量记录名称:"
+            android:gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/measure_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="仪器品牌:"
+            android:gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/instrument_brand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仪器型号:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/instrument_model"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度(单位:摄氏度):"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:layout_gravity="center_vertical"
+            android:inputType="number|numberDecimal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="气压(单位:hPa):"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/pressure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:inputType="number|numberDecimal"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <Spinner
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="司镜人员:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/operater_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备序列号:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/serial_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/shape_cursor_color"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff333333"
+            android:layout_gravity="center_vertical"
+            android:inputType="number|numberDecimal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_enable_corner_rect"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

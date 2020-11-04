@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="hrecyclerview_title_width">80dp</dimen>
+    <dimen name="levelinglines_item_title_width">80dp</dimen>
+    <dimen name="measurepoint_item_title_width">80dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+
+    <dimen name="measure_data_item_height">80dp</dimen>
+
+    <dimen name="paddingItemDecorationDefault">8dp</dimen>
+    <dimen name="paddingItemDecorationEdge">24dp</dimen>
+
+    <dimen name="poster_thumb_width">72dp</dimen>
+    <dimen name="poster_thumb_height">96dp</dimen>
+
+    <dimen name="poster_hero_height">192dp</dimen>
+    <dimen name="d_120">120dp</dimen>
+    <dimen name="d_56">56dp</dimen>
+    <dimen name="d_100">100dp</dimen>
+    <dimen name="d_200">200dp</dimen>
+    <dimen name="d_160">160dp</dimen>
+    <dimen name="d_40">40dp</dimen>
+    <dimen name="d_4">4dp</dimen>
+
+    <dimen name="spacing_normal">10dp</dimen>
+
+    <dimen name="header_height">160dp</dimen>
+    <dimen name="pan_content_width">1280dp</dimen>
+    <dimen name="pan_content_height">720dp</dimen>
+
+    <dimen name="leftWidth">120dip</dimen>
+    <dimen name="rightItemWidth">100dip</dimen>
+
+    <dimen name="pie_default_radius">100dp</dimen>
+    <dimen name="pie_center_radius">70dp</dimen>
+    <dimen name="pie_text_size">16sp</dimen>
+    <dimen name="pie_shader_size">6dp</dimen>
+
+    <dimen name="statusbar_view_height">0dp</dimen>
+</resources>

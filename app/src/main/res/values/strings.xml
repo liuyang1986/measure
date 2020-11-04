@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">沉降观测系统</string>
+    <string name="bt_client">BT客户端</string>
+    <string name="bt_server">BT服务端</string>
+    <string name="ble_client">BLE客户端(主机/中心设备/Central)</string>
+    <string name="ble_server">BLE服务端(从机/外围设备/peripheral)</string>
+    <string name="bt">经典蓝牙(BT)</string>
+    <string name="ble">低功耗蓝牙(BLE)</string>
+    <string name="reScan">重新扫描</string>
+    <string name="read">读取</string>
+    <string name="setNotify">设置通知</string>
+    <string name="max_byte">最多20字节</string>
+    <string name="write">写入</string>
+    <string name="msg_acra_toast">发生了一个崩溃</string>
+    <string name="bottom_nav_home">首页</string>
+    <string name="bottom_nav_measure">现场测量</string>
+    <string name="bottom_nav_mine">我的</string>
+
+
+    <string-array name="right_title_name">
+        <item>断面名称</item>
+        <item>断面编码</item>
+        <item>断面类型</item>
+        <item>构筑物名称</item>
+        <item>构筑物类型</item>
+        <item>地基处理方式</item>
+        <item>施工里程</item>
+        <item>施工长短链</item>
+        <item>观测状态</item>
+    </string-array>
+
+    <string-array name="levelingline_title_name">
+        <item>线路名称</item>
+        <item>线路编码</item>
+        <item>地理类型</item>
+        <item>测点数</item>
+        <item>工作基点数</item>
+        <item>专业</item>
+        <item>起里程</item>
+        <item>止里程</item>
+        <item>创建时间</item>
+        <item>修改时间</item>
+        <item>设置人员</item>
+        <item>状态</item>
+    </string-array>
+
+    <string-array name="measure_point_title">
+        <item>测点名称</item>
+        <item>测点类型</item>
+        <item>测点高程</item>
+        <item>上次测量高程</item>
+    </string-array>
+</resources>

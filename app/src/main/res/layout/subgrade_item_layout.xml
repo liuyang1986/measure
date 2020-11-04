@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_press_selector">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/id_head_view"
+            android:layout_width="@dimen/hrecyclerview_title_width"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/id_index"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="序号"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_move_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_dmmc"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="断面名称"/>
+
+            <TextView
+                android:id="@+id/id_dmbm"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="断面编码"/>
+
+            <TextView
+                android:id="@+id/id_dmlx"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="断面类型"/>
+
+            <TextView
+                android:id="@+id/id_gzwmc"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="构筑物名称"/>
+
+            <TextView
+                android:id="@+id/id_gzwlx"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="构筑物类型"/>
+
+            <TextView
+                android:id="@+id/id_djclfs"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="地基处理方式"/>
+
+            <TextView
+                android:id="@+id/id_sglc"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="施工里程"/>
+
+            <TextView
+                android:id="@+id/id_sgcdl"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="施工长短链"/>
+
+            <TextView
+                android:id="@+id/id_gczt"
+                android:layout_width="@dimen/hrecyclerview_title_width"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/text_selected_white"
+                android:textSize="12sp"
+                tools:text="观测状态"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/id_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHint"/>
+</RelativeLayout>
